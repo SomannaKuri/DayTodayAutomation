@@ -12,7 +12,6 @@ files=list((glob.glob(r"C:\Users\somanna.kuri\Desktop\WebDevelopmentTraining\Sam
 #Looping through all files and adding page number to variable totalPages
 for i in files:
     pdf = PdfFileReader((open(i,"rb")))
-    totalPages.append(pdf.getNumPages())
     totalPages +=pdf.getNumPages()
 print("Total number of pages from above directory :", totalPages)
 
